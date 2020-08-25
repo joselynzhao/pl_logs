@@ -1,0 +1,6 @@
+atm_t_20_18_15
+compare_path:
+duke/atm/atm_vs_0
+duke/atm/atm_t15
+duke/atm/atm_t18
+duke/atm/0

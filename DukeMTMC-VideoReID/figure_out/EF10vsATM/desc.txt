@@ -1,0 +1,4 @@
+EF10vsATM
+compare_path:
+DukeMTMC-VideoReID/atm/atm_0
+DukeMTMC-VideoReID/baseline/EF-10

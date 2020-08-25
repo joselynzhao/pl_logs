@@ -1,0 +1,17 @@
+batch_size=16
+dataset=DukeMTMC-VideoReID
+epochs=70
+exp_aim=看看dukevideo和论文中的最佳性能
+exp_name=baseline
+exp_order=test_dukevideo_EF5
+fea=2048
+init=-1.0
+lamda=0.8
+loss=ExLoss
+max_frames=100
+momentum=0.5
+resume=None
+run_file=train.py
+step_size=55
+EF=10
+save_path=/mnt/home/pl_logs/DukeMTMC-VideoReID/baseline/test_dukevideo_EF5

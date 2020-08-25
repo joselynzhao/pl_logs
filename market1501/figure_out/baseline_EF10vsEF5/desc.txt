@@ -1,0 +1,4 @@
+baseline_EF10vsEF5
+compare_path:
+market1501/atm/0
+market1501/baseline/EF-5

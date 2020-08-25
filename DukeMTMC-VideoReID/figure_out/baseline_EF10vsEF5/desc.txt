@@ -1,0 +1,4 @@
+baseline_EF10vsEF5
+compare_path:
+DukeMTMC-VideoReID/baseline/EF-5
+DukeMTMC-VideoReID/baseline/EF-10

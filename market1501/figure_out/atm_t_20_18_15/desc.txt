@@ -1,0 +1,6 @@
+atm_t_20_18_15
+compare_path:
+market1501/atm/atm_t18
+market1501/atm/0
+market1501/atm/atm_vs_0
+market1501/atm/atm_t15

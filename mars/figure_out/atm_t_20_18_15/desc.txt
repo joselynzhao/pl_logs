@@ -1,0 +1,6 @@
+atm_t_20_18_15
+compare_path:
+mars/atm/atm_t18
+mars/atm/atm_t15
+mars/atm/0
+mars/atm/atm_vs_0

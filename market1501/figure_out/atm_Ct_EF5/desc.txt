@@ -1,0 +1,4 @@
+atm_Ct_EF5
+compare_path:
+market1501/atm/atm_t15_EF5
+market1501/baseline/EF-5

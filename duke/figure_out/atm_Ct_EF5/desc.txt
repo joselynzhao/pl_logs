@@ -1,0 +1,6 @@
+atm_Ct_EF5
+compare_path:
+duke/baseline/EF-5
+duke/atm/atm_t18_EF5
+duke/atm/atm_t15_EF5
+duke/atm/atm_t20_EF5
