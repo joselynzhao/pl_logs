@@ -1,0 +1,72 @@
+dataset_name: mars
+Files already downloaded and verified
+Mars dataset loaded
+  subset   | # ids | # tracklets
+  ---------------------------
+  train    |   625 |     8298
+  query    |   626 |     1980
+  gallery  |   634 |     8062
+[0, 1, 2, 3, 4, 5, 6]
+continued from step 0
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_0.ckpt'
+create dataloader for Test with batch_size 1
+Extract 8062 batch videos
+Mean AP: 23.0%
+CMC Scores:
+  top-1          45.7%
+  top-5          60.1%
+  top-10         66.2%
+  top-20         72.3%
+continued from step 1
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_1.ckpt'
+create dataloader for Test with batch_size 1
+Extract 8062 batch videos
+Mean AP: 29.2%
+CMC Scores:
+  top-1          52.8%
+  top-5          66.8%
+  top-10         71.8%
+  top-20         77.6%
+continued from step 2
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_2.ckpt'
+create dataloader for Test with batch_size 1
+Extract 8062 batch videos
+Mean AP: 33.3%
+CMC Scores:
+  top-1          58.7%
+  top-5          71.2%
+  top-10         76.7%
+  top-20         80.7%
+continued from step 3
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_3.ckpt'
+create dataloader for Test with batch_size 1
+Extract 8062 batch videos
+Mean AP: 34.6%
+CMC Scores:
+  top-1          58.9%
+  top-5          72.6%
+  top-10         77.8%
+  top-20         82.1%
+continued from step 4
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_4.ckpt'
+create dataloader for Test with batch_size 1
+Extract 8062 batch videos
+Mean AP: 33.9%
+CMC Scores:
+  top-1          58.4%
+  top-5          72.2%
+  top-10         77.4%
+  top-20         81.2%
+continued from step 5
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_5.ckpt'
+create dataloader for Test with batch_size 1
+Extract 8062 batch videos
+Mean AP: 31.9%
+CMC Scores:
+  top-1          57.3%
+  top-5          69.6%
+  top-10         74.5%
+  top-20         78.9%
+continued from step 6
+=> Loaded checkpoint '/mnt/home/pl_logs/mars/atm/atm_t15/tagper/step_6.ckpt'
+create dataloader for Test with batch_size 1

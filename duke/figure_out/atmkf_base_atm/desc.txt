@@ -1,0 +1,5 @@
+atmkf_base_atm
+compare_path:
+duke/atm/0
+duke/atm/atmkf_t15
+duke/atm/atm_t15

@@ -1,0 +1,79 @@
+dataset_name: market1501
+Files already downloaded and verified
+Market1501 dataset loaded
+  subset   | # ids | # tracklets
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+[0, 1, 2, 3, 4, 5, 6]
+continued from step 0
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_0.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 15.8%
+CMC Scores:
+  top-1          38.6%
+  top-5          55.6%
+  top-10         63.5%
+  top-20         70.3%
+continued from step 1
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_1.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 22.1%
+CMC Scores:
+  top-1          49.2%
+  top-5          65.3%
+  top-10         72.0%
+  top-20         78.1%
+continued from step 2
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_2.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 24.8%
+CMC Scores:
+  top-1          52.4%
+  top-5          69.2%
+  top-10         75.6%
+  top-20         81.7%
+continued from step 3
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_3.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 25.2%
+CMC Scores:
+  top-1          52.0%
+  top-5          68.9%
+  top-10         75.8%
+  top-20         81.8%
+continued from step 4
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_4.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 24.9%
+CMC Scores:
+  top-1          52.7%
+  top-5          69.2%
+  top-10         75.9%
+  top-20         81.1%
+continued from step 5
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_5.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 22.8%
+CMC Scores:
+  top-1          49.8%
+  top-5          65.9%
+  top-10         72.3%
+  top-20         78.2%
+continued from step 6
+=> Loaded checkpoint '/mnt/home/pl_logs/market1501/atm/atm_t15/tagper/step_6.ckpt'
+create dataloader for Test with batch_size 256
+Extract 76 batch videos
+Mean AP: 20.9%
+CMC Scores:
+  top-1          45.5%
+  top-5          62.9%
+  top-10         70.6%
+  top-20         77.9%

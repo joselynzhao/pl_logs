@@ -82,7 +82,8 @@ class drawer01():
     def draw_Perf(self): #只考虑perfermance的部分.
         self.get_datas_P()
         raw,col = 2,3
-        self.__draw(self.data,self.item_name_P,raw,col,'Performance')
+        png_name = 'Performance' if self.save_name != 'atm_vs_tagper' else '{}'.format(self.names[0])
+        self.__draw(self.data,self.item_name_P,raw,col,png_name)
 
     def __draw(self,data,items,raw,col,fig_name,unit_size=4,hspace=0.3,wspace=0.3,dpi=300):
         plt.figure(figsize=(col*unit_size*1.5,raw*unit_size),dpi = dpi)
@@ -122,6 +123,10 @@ class drawer01():
 
 
 
+
+
+
+
 if __name__ =='__main__':
     analysis ={
         'baseline_EF10vsEF5':{
@@ -147,16 +152,32 @@ if __name__ =='__main__':
             'atm/atm_t18_EF5',
             'atm/atm_t15_EF5',
             'baseline/EF-5'
+        },
+        'atmkf_base_atm':{
+            'atm/0',
+            'atm/atm_t15',
+            'atm/atmkf_t15'
+        },
+        'atm_vs_tagper':{
+            'atm/pro1_t2',
+            'atm/pro1_t2/tagper',
+        },
+        'atmpro1_vs_atm15and0':{
+            'atm/pro1_t1',
+            'atm/pro1_t2',
+            'atm/atm_t15',
+            'atm/0'
         }
     }
     datasets = ['duke','DukeMTMC-VideoReID','market1501','mars']
-    save_name = 'atm_Ct_EF5'
-    compare_path = [osp.join(datasets[0],k) for k in analysis[save_name]]
+    save_name = 'atm_vs_tagper'
+    compare_path = [osp.join(datasets[2],k) for k in analysis[save_name]]
     # compare_path = odatasets[1]
     print(compare_path)
     drawer = drawer01(compare_path,save_name)
     drawer.draw_Perf()
-    drawer.draw_Feat()
+    if save_name!='atm_vs_tagper':
+        drawer.draw_Feat()
 
 
 
