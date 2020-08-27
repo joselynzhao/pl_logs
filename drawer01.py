@@ -118,15 +118,6 @@ class drawer01():
         plt.savefig(osp.join(self.save_path,fig_name),bbox_inches='tight')
 
 
-
-
-
-
-
-
-
-
-
 if __name__ =='__main__':
     analysis ={
         'baseline_EF10vsEF5':{
