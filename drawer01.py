@@ -18,6 +18,7 @@ class drawer01():
         #     self.logs_dir = '/home/joselyn/workspace/ATM_SERIES/'  # 本地跑用这个
         self.compare_path_list = compare_path_list
         self.save_name = save_name
+        # self.names = []
         self.names = [(path.split('/')[-2])+'-tagper' if path.split('/')[-1]=='tagper' else  path.split('/')[-1] for path in self.compare_path_list]
         self.dataset = self.compare_path_list[0].split('/')[0]  # 第一个是数据集.
         self.save_path = osp.join(self.dataset,'figure_out',self.save_name) # 这个是固定不变的
@@ -41,12 +42,19 @@ class drawer01():
         self.dataf = []
         for path in self.compare_path_list:
             file_data = []
+            file = ''
             try:
                 file = open(osp.join(path,'dataf.txt'),'r')
                 seg = [1,3]
             except FileNotFoundError:
-                file = open(osp.join(path,'data.txt'),'r')
-                seg = [6,8]
+                try:
+                    file = open(osp.join(path,'data.txt'),'r')
+                    seg = [6,8]
+                except FileNotFoundError:
+                    # self.names.remove(path.split('/')[-1])
+                    print("the path {} is not found".format(path))
+                    continue
+            print("successfully load the data under the path {}".format(path))
             infos = file.readlines()
             for info in infos:
                 info_f = info.strip('\n').split(' ')[seg[0]:seg[1]]  # 不要第一个 step
@@ -62,7 +70,14 @@ class drawer01():
         for path in self.compare_path_list: # 对每一个实验去数据.
             # path = osp.join(self.logs_dir, path)
             file_data = []
-            file = open(osp.join(path,'data.txt'),'r')
+            file = ''
+            try:
+                file = open(osp.join(path,'data.txt'),'r')
+            except FileNotFoundError:
+                self.names.remove(path.split('/')[-1])
+                print("the path {} is not found".format(path))
+                continue  # 找不到就跳过
+            print("successfully load the data under the path {}".format(path))
             infos = file.readlines()
             for info in infos:
                 info_f = info.strip('\n').split(' ')[1:6]#不要step
@@ -147,23 +162,44 @@ if __name__ =='__main__':
         'atmkf_base_atm':{
             'atm/0',
             'atm/atm_t15',
-            'atm/atmkf_t15'
+            'atm/atmkf_t15',
+            'atm/pro1_t1'
         },
         'atm_vs_tagper':{
             'atm/pro1_t0',
             'atm/pro1_t0/tagper',
         },
         'atmpro1_vs_atm15and0':{
-            'atm/pro1_t0',
+            # 'atm/pro1_t0',
             'atm/pro1_t1',
             'atm/pro1_t2',
-            # 'atm/pro1_t3',
+            'atm/pro1_t3',
+            'atm/atm_t15',
+            'baseline/EF-10'
+        },
+        'atmpro2_C':{
+            'atm/pro2_t15',
+            'atm/pro2_t20',
+            'atm/pro1_t2',
             'atm/atm_t15',
             'atm/0'
+        },
+        'atm_EF10':{
+            'atm/0',
+            'baseline/EF-10',
+            'atm/atm_t15',
+            'atm/pro1_t2',
+            'atm/pro2_t15',
+            'atm/atmkf_t15',
+            'atm/kf2_t15'
+        },
+        'atmkf_C':{
+            'atm/atmkf_t15',
+            'atm/kf2_t15'
         }
     }
     datasets = ['duke','DukeMTMC-VideoReID','market1501','mars']
-    save_name = 'atm_vs_tagper'
+    save_name = 'atmkf_C'
     compare_path = [osp.join(datasets[2],k) for k in analysis[save_name]]
     # compare_path = odatasets[1]
     print(compare_path)

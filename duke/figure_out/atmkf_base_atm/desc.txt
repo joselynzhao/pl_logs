@@ -1,5 +1,6 @@
 atmkf_base_atm
 compare_path:
-duke/atm/0
 duke/atm/atmkf_t15
+duke/atm/pro1_t1
 duke/atm/atm_t15
+duke/atm/0

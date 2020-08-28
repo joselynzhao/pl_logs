@@ -57,7 +57,7 @@ class drawer_kf(): #处理单一文件.
             h,w = self.data.shape
             print("h={},w={}".format(h,w))
             self.label_pre = np.array(self.data[:,[0,3]] if w==5 else self.data[:,[0,3,5]])
-            self.select_pre = np.array(self.data[:,[2,4]] if w==5 else self.data[:,[2,4,6]])
+            self.select_pre = np.array(self.data[:,[1,4]] if w==5 else self.data[:,[1,4,6]])
             print(self.label_pre.shape)
             print(self.select_pre.shape)
         else:
@@ -105,5 +105,5 @@ class drawer_kf(): #处理单一文件.
 if __name__ =='__main__':
 
     datasets = ['duke','DukeMTMC-VideoReID','market1501','mars']
-    file_name = 'atm/pro1_t0'
+    file_name = 'atm/pro1_t2'
     D = drawer_kf(file_name,datasets[2])
