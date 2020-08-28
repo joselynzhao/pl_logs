@@ -150,12 +150,14 @@ if __name__ =='__main__':
             'atm/atmkf_t15'
         },
         'atm_vs_tagper':{
-            'atm/pro1_t2',
-            'atm/pro1_t2/tagper',
+            'atm/pro1_t0',
+            'atm/pro1_t0/tagper',
         },
         'atmpro1_vs_atm15and0':{
+            'atm/pro1_t0',
             'atm/pro1_t1',
             'atm/pro1_t2',
+            # 'atm/pro1_t3',
             'atm/atm_t15',
             'atm/0'
         }

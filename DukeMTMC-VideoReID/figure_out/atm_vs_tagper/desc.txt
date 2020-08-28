@@ -1,0 +1,4 @@
+atm_vs_tagper
+compare_path:
+DukeMTMC-VideoReID/atm/pro1_t2/tagper
+DukeMTMC-VideoReID/atm/pro1_t2

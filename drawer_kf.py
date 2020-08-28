@@ -105,5 +105,5 @@ class drawer_kf(): #处理单一文件.
 if __name__ =='__main__':
 
     datasets = ['duke','DukeMTMC-VideoReID','market1501','mars']
-    file_name = 'atm/pro1_t2'
+    file_name = 'atm/pro1_t0'
     D = drawer_kf(file_name,datasets[2])

@@ -1,4 +1,0 @@
-atm_va_tagper
-compare_path:
-market1501/atm/atm_t15/tagper
-market1501/atm/atm_t15

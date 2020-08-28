@@ -1,4 +1,4 @@
 atm_vs_tagper
 compare_path:
-market1501/atm/pro1_t2/tagper
-market1501/atm/pro1_t2
+market1501/atm/pro1_t0/tagper
+market1501/atm/pro1_t0
