@@ -1,0 +1,7 @@
+atmpro2_C
+compare_path:
+duke/atm/atm_t15
+duke/atm/0
+duke/atm/pro2_t20
+duke/atm/pro1_t2
+duke/atm/pro2_t15

@@ -1,0 +1,8 @@
+atm_EF10
+compare_path:
+DukeMTMC-VideoReID/atm/pro2_t15
+DukeMTMC-VideoReID/baseline/EF-10
+DukeMTMC-VideoReID/atm/pro1_t2
+DukeMTMC-VideoReID/atm/atmkf_t15
+DukeMTMC-VideoReID/atm/0
+DukeMTMC-VideoReID/atm/atm_t15

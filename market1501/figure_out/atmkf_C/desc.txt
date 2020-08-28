@@ -1,0 +1,4 @@
+atmkf_C
+compare_path:
+market1501/atm/kf2_t15
+market1501/atm/atmkf_t15

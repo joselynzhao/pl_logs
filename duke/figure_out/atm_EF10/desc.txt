@@ -1,0 +1,8 @@
+atm_EF10
+compare_path:
+duke/atm/pro1_t2
+duke/atm/atm_t15
+duke/baseline/EF-10
+duke/atm/0
+duke/atm/atmkf_t15
+duke/atm/pro2_t15

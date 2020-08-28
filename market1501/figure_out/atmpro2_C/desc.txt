@@ -1,0 +1,7 @@
+atmpro2_C
+compare_path:
+market1501/atm/pro2_t15
+market1501/atm/atm_t15
+market1501/atm/0
+market1501/atm/pro1_t2
+market1501/atm/pro2_t20
